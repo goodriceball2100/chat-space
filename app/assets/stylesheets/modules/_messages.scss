@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+
+.wrapper {
+
+  .chat-side {
+    background-color: #2f3e51;
+    width: 300px;
+    height: 100vh;
+    float: left;  
+    
+    .side-header {
+      background-color: #253141;
+      height: 100px;
+      width: 300px;
+      display: flex;
+      align-items: center;
+      
+        &__box {
+          height: 20px;
+          margin: 0 auto;
+          width: 260px;
+          display: flex;
+          justify-content: space-between;
+          font-weight: bold;
+
+          &__user-name {
+            color: $white;
+            font-size: 16px  ;
+            display: block;
+            line-height: center;
+          }
+          
+            ul {
+            width: 60px;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            }
+              i {
+                margin-left: 5px;
+                color: $white;
+             } 
+        }
+    }
+
+    
+    .groups {
+      height: calc(100vh - 100px);
+      padding: 20px 20px 0;
+      box-sizing: border-box;
+      .group {
+        color: $white;
+        text-decoration: none;
+          p.group__group-name {
+            margin-top: 20px;
+            font-size: 15px;
+            margin-bottom: 5px;
+          }
+              p.group__group-message {
+                font-size: 11px;
+                margin-bottom: 40px;
+              }
+      }
+    }
+  }
+
+  .chat-main {
+    height: 100vh;
+    width: calc(100vw - 300px);
+    background-color: $white;
+    float: right;
+    
+      &__header {
+        background-color: $white;
+        height: 100px;
+        width: calc(100vw - 300px);
+        display: flex;
+        
+        &__main {
+          width: calc(100vw - 300px - 80px);
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          
+          .header-left-box {
+            h2 {
+              color: #333333;
+              font-size: 20px; 
+              margin-top: 35px;
+              margin-bottom: 15px;
+            }
+              ul {
+                color: #999999;
+                font-size: 12px;
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                .member-name {
+                  text-decoration: none;
+                  margin-left: 5px;
+                  color: #999999;
+                }
+              }   
+          }
+          
+          .main__header__edit-btn {
+            height: 40px;
+            line-height: 40px;
+            padding: 0 20px;
+            margin-top: 30px;
+            border: solid 1px $aqua;
+          }
+            a {
+              text-decoration: none;
+              color: $aqua;
+            }           
+        }
+      }
+
+    .messages {
+      background-color: #fafafafa;
+      height: calc(100vh - 100px - 90px);
+      width: calc(100vw - 300px);
+      padding: 46px 40px;
+        .message {
+          padding-bottom: 40px;
+            &__info {
+              margin-bottom: 10px;
+              display: flex;
+                &__talker {
+                  color: #333;
+                  font-size: 16px;
+                }
+                  &__date {
+                    color: #999;
+                    font-size: 12px;
+                    margin-left: 10px;
+                  }
+            }
+                  &__text {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                    color: #434A54;
+                  }
+              }
+          }
+
+            .form {
+              background-color: #DDDDDD;
+              box-sizing: border-box;
+              height: 90px;
+              padding: 20px 50px 20px 40px;
+              &__message {
+                border: none;
+                float: left;
+                height: 50px;
+                width: calc(100% - 150px);
+              }
+              &__box {
+                background-color: $white;
+                float: left;
+                height: 50px;
+                padding-right: 10px;
+                &__image {
+                  font-size: 20px;
+                  line-height: 50px;
+                }
+                .hidden {
+                  display: none;
+                }
+              }
+              &__submit {
+                background-color: $aqua;
+                color: $white;
+                float: right;
+                font-size: 16px;
+                height: 50px;
+                margin-left: 15px;
+                padding: 0 30px;
+              }
+            }
+    }
+ }
+}
