@@ -1,0 +1,44 @@
+.chat-main
+  .chat-main__header
+    .chat-main__header__main
+      .header-left-box
+        %h2.group-about
+          グループ
+        %ul.member-list
+          Member:
+          %li
+          = link_to "#", class: "member-name" do
+            サイトウ
+          %li
+          = link_to "#", class: "member-name" do
+            oku01
+      .main__header__edit-btn
+        = link_to "#" do
+          Edit
+
+  .messages
+    .message
+      .message__info
+        %p.message__info__talker
+          サイトウ
+        %p.message__info__date
+          2020/04/25(Sat) 09:09:06
+      %p.message__text
+        good
+    .message
+      .message__info
+        %p.message__info__talker
+          サイトウ
+        %p.message__info__date
+          2020/04/25(Sat) 09:09:06
+      %p.message__text
+        good
+
+  .form
+    %form
+      %input.form__message
+      .form__box
+        %label.form__box__image
+          = icon('fa','image',class: 'icon')
+          %input.hidden{type: 'file'}
+      %input.form__submit{type: 'submit', value: 'Send'}
