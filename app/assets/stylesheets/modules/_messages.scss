@@ -2,7 +2,7 @@
   box-sizing: border-box;
 
 .wrapper {
-
+  
   .chat-side {
     background-color: #2f3e51;
     width: 300px;
@@ -39,7 +39,7 @@
             }
               i {
                 margin-left: 5px;
-                color: $white;
+                color: #fff;
              } 
         }
     }
@@ -83,7 +83,7 @@
           display: flex;
           justify-content: space-between;
           
-          .header-left-box {
+          .left {
             h2 {
               color: #333333;
               font-size: 20px; 
