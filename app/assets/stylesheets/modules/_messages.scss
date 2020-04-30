@@ -52,15 +52,15 @@
       .group {
         color: $white;
         text-decoration: none;
-          p.group__group-name {
+          p.group__group__name {
             margin-top: 20px;
             font-size: 15px;
             margin-bottom: 5px;
           }
-              p.group__group-message {
-                font-size: 11px;
-                margin-bottom: 40px;
-              }
+          p.group__group__message {
+            font-size: 11px;
+            margin-bottom: 40px;
+          }
       }
     }
   }
@@ -124,6 +124,7 @@
       height: calc(100vh - 100px - 90px);
       width: calc(100vw - 300px);
       padding: 46px 40px;
+      overflow: scroll;
         .message {
           padding-bottom: 40px;
             .upper-message {
